@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --cor-principal: #0D43B6;
+    --titulo: #fd7b4c;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+#lado-esquerdo {
+    background-color: var(--cor-principal);
+    width: 25%;
+    text-align: center;
+}
+
+.foto {
+    margin-top: 25%;
+    border-radius: 50%;
+    width: 50%;
+}
+
+#assinatura {
+    font-family: 'Babylonica', cursive;
+    font-size: 5em;
+    margin-top: -100px;
+    color: white;
+}
+
+.nome {
+    padding-top: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--titulo);
+    font-size: 1.8em;
+    font-style: italic;
+}
+
+
+#lado-direito {
+    width: 75%;
+    background-color: #ffb398;
+}
+
+.barra {
+    width: 65%;
+    margin: 80px auto;
+    border: black 1px solid;
+}
+
+.texto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    padding: 5px 30px;
+    font-weight: 600;
+    text-align: justify;
+}
+.subtitulo {
+    padding-left: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    color: var(--cor-principal);
+    margin: 40px 0px;
+    font-style: italic;
+}
+
+#titulo-dispo {
+    text-align: right;
+    padding-right: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
+}
+
+#texto-dispo {
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 1.4em
+}
+
+/* 
+responsivo para celular
+*/
+
+@media (max-width: 500px) {
+    main {
+        display: block;
+    }
+
+    #lado-esquerdo {
+        width: 100%;
+    }
+
+    .nome {
+        font-size: 1.4em;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #assinatura {
+        margin-top: -70px;
+        font-size: 3.5em;
+    }
+
+    #lado-direito {
+        margin-top: -40px;
+        width: 100%;
+    }
+
+    .subtitulo {
+        padding-top: 25px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #titulo-dispo {
+        padding-right: 0;
+        text-align: center;
+    }
+}
