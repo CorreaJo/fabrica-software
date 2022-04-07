@@ -78,6 +78,11 @@ main {
     font-style: italic;
 }
 
+#topico {
+    font-size: 1.4em;
+    color: var(--cor-principal);
+}
+
 #titulo-dispo {
     text-align: right;
     padding-right: 100px;
