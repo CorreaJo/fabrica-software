@@ -80,7 +80,7 @@ main {
 
 #topico {
     font-size: 1.4em;
-    color: var(--cor-principal);
+    color: #0e2c6e;
 }
 
 #titulo-dispo {
@@ -88,6 +88,7 @@ main {
     padding-right: 100px;
     font-family: 'Ubuntu', sans-serif;
     padding-top: 20px;
+    margin-bottom: -15px;
 }
 
 #texto-dispo {
